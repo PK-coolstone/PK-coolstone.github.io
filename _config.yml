@@ -3,13 +3,13 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: '冰石'
 subtitle: ''
 description: ''
-keywords:
-author: John Doe
+keywords: Chemistry, ACGN, RPG,
+author: Xingquan Tao
 language: zh-CN
-timezone: ''
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -101,9 +101,6 @@ theme: ayer
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
-deploy:
-  type: ''
-
 deploy:
   type: git
   repository: https://github.com/PK-coolstone/PK-coolstone.github.io.git  #你的仓库地址
