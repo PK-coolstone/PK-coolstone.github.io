@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: '冰石'
+title: '檐木冰石'
 subtitle: ''
 description: ''
 keywords: Chemistry, ACGN, RPG,
@@ -13,7 +13,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: http://coolstone.space
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -46,7 +46,7 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: false
+  auto_detect: true
   tab_replace: ''
   wrap: true
   hljs: false
@@ -90,14 +90,49 @@ pagination_dir: page
 
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
-include:
-exclude:
-ignore:
+#include:
+#exclude:
+#ignore:
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: ayer
+
+# hexo-generator-searchdb
+search:
+  path: search.xml
+  field: post
+  format: html
+
+# live2d
+live2d:
+  enable: true
+  scriptFrom: local
+  pluginRootPath: live2dw/
+  pluginJsPath: lib/
+  pluginModelPath: assets/
+  tagMode: false
+  debug: false
+  model:
+    use: live2d-widget-model-wanko
+  display:
+    position: right
+    width: 150
+    height: 300
+  mobile:
+    show: true
+  react:
+    opacity: 0.7
+
+#music_player
+aplayer:
+  title: huahuatime
+  author: k-on!
+  url: https://m701.music.126.net/20220927112509/4fc1b4440f146b50e4434bff85b4143a/jdyyaac/075f/0e08/040e/050e38e8bd9b8b12ee123d37039ac144.m4a
+  narrow: true
+  autoplay: true
+  mode: 'random'
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -105,3 +140,4 @@ deploy:
   type: git
   repository: https://github.com/PK-coolstone/PK-coolstone.github.io.git  #你的仓库地址
   branch: master
+
